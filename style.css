@@ -1,0 +1,61 @@
+.buttonload,
+.btn {
+  padding: 15px 25px;
+  border: none;
+  background-color: #00ac03;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.cont {
+  border: 2px solid #ddd;
+  background-color: #ddd;
+  padding: 10px;
+  font-size: 20px;
+}
+#more {
+  display: none;
+}
+#myBtn {
+  padding: 10px 15px;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #aaa;
+    color: black;
+  }
+}
+.btn {
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: DodgerBlue;
+  &:hover {
+    background-color: RoyalBlue;
+  }
+}
+.notification {
+  text-decoration: none;
+  padding: 20px;
+  position: relative;
+  background-color: #888;
+  color: white;
+  font-size: 25px;
+  &:hover {
+    background-color: red;
+  }
+}
+.notification .badge {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: red;
+  color: white;
+}

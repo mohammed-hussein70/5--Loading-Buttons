@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading Buttons</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Loading Buttons -->
+    <h1>Loading Buttons</h1>
+    <button class="buttonload">
+      <i class="fa fa-spinner fa-spin"></i>Loading
+    </button>
+
+    <button class="buttonload">
+      <i class="fa fa-circle-o-notch fa-spin"></i>Loading
+    </button>
+
+    <button class="buttonload">
+      <i class="fa fa-refresh fa-spin"></i>Loading
+    </button>
+
+    <hr />
+    <hr />
+    <hr />
+    <!-- Read More Read Less Button -->
+    <h2>Read More Read Less Button</h2>
+    <div class="cont">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+        imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scele
+        <span id="dots">...</span
+        ><span id="more"
+          >risque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+          congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut
+          aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim
+          ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec
+          vitae dui eget tellus gravida venenatis. Integer fringilla congue eros
+          non fermentum. Sed dapibus pulvinar nibh tempor porta.</span
+        >
+      </p>
+      <button onclick="myFunction()" id="myBtn">Read more</button>
+    </div>
+    <hr />
+    <hr />
+    <hr />
+    <!--Download Button  -->
+    <h2>Download Button</h2>
+
+    <button class="btn"><i class="fa fa-download"></i> Download</button>
+
+    <button class="btn" style="width: 100%">
+      <i class="fa fa-download"></i> Download
+    </button>
+    <hr />
+    <hr />
+    <hr />
+    <br />
+    <h2>Notification Buttons</h2>
+    <br />
+    <br />
+    <!-- Notification Buttons -->
+    <a href="#" class="notification">
+      <span>Inbox</span>
+      <span class="badge">3</span>
+    </a>
+    <script>
+      let btn = document.querySelector("#myBtn");
+      let dots = document.querySelector("#dots");
+      let more = document.querySelector("#more");
+      btn.addEventListener("click", function () {
+        if (dots.style.display === "none") {
+          more.style.display = "none";
+          btn.innerHTML = "Read more";
+          dots.style.display = "inline";
+        } else {
+          more.style.display = "inline";
+          btn.innerHTML = "Read less";
+          dots.style.display = "none";
+          btn.style.display = "block";
+        }
+      });
+    </script>
+  </body>
+</html>
